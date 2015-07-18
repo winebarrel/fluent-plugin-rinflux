@@ -4,6 +4,8 @@ Output plugin for InfluxDB.
 
 see [Rinflux](https://github.com/winebarrel/rinflux) gem.
 
+[![Build Status](https://travis-ci.org/winebarrel/fluent-plugin-rinflux.svg?branch=master)](https://travis-ci.org/winebarrel/fluent-plugin-rinflux)
+
 ## Installation
 
 Add this line to your application's Gemfile:
