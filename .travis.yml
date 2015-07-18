@@ -3,6 +3,12 @@ rvm:
   - 2.0.0
   - 2.1.5
   - 2.2.1
+install:
+  - git clone https://github.com/winebarrel/rinflux
+  - cd rinflux
+  - bundle install
+  - bundle exec rake install
+  - cd ..
 script:
   - bundle install
   - bundle exec rake
