@@ -10,13 +10,21 @@ see [Rinflux](https://github.com/winebarrel/rinflux) gem.
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'fluent-plugin-rinflux'
+```sh
+# install rinflux
+git clone https://github.com/winebarrel/rinflux.git
+cd rinflux
+bundle install
+bundle exec rake install
+
+cd ...
+
+# install fluent-plugin-rinflux
+git clone https://github.com/winebarrel/fluent-plugin-rinflux.git
+cd fluent-plugin-rinflux
+bundle install
+bundle exec rake install
 ```
-
-And then execute:
-
-    $ bundle
 
 ## Configuration
 
