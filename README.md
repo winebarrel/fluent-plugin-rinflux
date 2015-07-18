@@ -33,7 +33,7 @@ And then execute:
 echo '{"disk_free":442221834240}' | fluent-cat influxdb.data
 ```
 ```sh
-echo '{"disk_free":442221834240,"tags":{"zoo":"baz"}}' | fluent-cat influxdb.data
+echo '{"disk_free":442221834240,"tags":{"hostname":"server01","disk_type":"SSD"}}' | fluent-cat influxdb.data
 ```
 ```sh
 echo '{"disk_free":{"free_space":442221834240,"disk_type":"SSD"}' | fluent-cat influxdb.data

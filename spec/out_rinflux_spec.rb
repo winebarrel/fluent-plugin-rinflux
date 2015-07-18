@@ -31,10 +31,10 @@ describe Fluent::RinfluxOutput do
     end
   end
 
-  context("disk_free"=>442221834240, "tags"=>{"zoo"=>"baz"}) do
+  context("disk_free"=>442221834240, "tags"=>{"hostname"=>"server01","disk_type"=>"SSD"}) do
     it do
       is_expected.to eq [
-        ["disk_free", 442221834240, {:db=>"mydb", :tags=>{"zoo"=>"baz"}, :timestamp=>time_nsec}]
+        ["disk_free", 442221834240, {:db=>"mydb", :tags=>{"hostname"=>"server01","disk_type"=>"SSD"}, :timestamp=>time_nsec}]
       ]
     end
   end
