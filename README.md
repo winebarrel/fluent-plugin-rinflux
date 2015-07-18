@@ -17,7 +17,7 @@ cd rinflux
 bundle install
 bundle exec rake install
 
-cd ...
+cd ..
 
 # install fluent-plugin-rinflux
 git clone https://github.com/winebarrel/fluent-plugin-rinflux.git
